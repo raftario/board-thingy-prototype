@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:unicorn/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "react/prop-types": 0,
+    "unicorn/prevent-abbreviations": 0,
+    "unicorn/no-array-callback-reference": 0
+  },
+  "overrides": [
+    {
+      "files": "*.tsx",
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": 0
+      }
+    }
+  ]
+}
